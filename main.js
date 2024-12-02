@@ -2,12 +2,20 @@ let str = "i am testing my basic things";
 // for (let i = 0; i < str.length; i++) {
 //   console.log(str[i]);
 // }
-let count = 0;
-for (let arr of str) {
-  //   console.log(arr);
-  if (arr === "a") {
-    let mo = arr;
-    count++;
+// let count = 0;
+// for (let arr of str) {
+//   //   console.log(arr);
+//   if (arr === "a") {
+//     count++;
+//   }
+//   console.log(count);
+// }
+let arr = str.split("");
+let newArr = "";
+for (let i of arr) {
+  if (i == "i") {
+    i = "I";
   }
-  console.log(count + mo);
+  newArr += i;
 }
+console.log(newArr);
